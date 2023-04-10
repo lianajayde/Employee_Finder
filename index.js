@@ -68,3 +68,36 @@ function startingPrompts() {
             process.exit();
     }
 })}; 
+
+
+//Function for looking all Departments
+function viewDepartments() {
+    let request = "SELECT * FROM Department";
+    connection.query(request, function(err, res) {
+        if (err) throw err;
+        console.table(res);
+        startingPrompts();
+    })
+};
+
+//Function for looking at all Employees
+function viewEmployees() {
+    let request = "SELECT * FROM Employee";
+    connection.query(request, function(err, res) {
+        if (err) throw err;
+        console.table(res);
+        startingPrompts();
+    })
+};
+
+//Function for looking at all Employee Roles
+function viewRoles() {
+    let request = "SELECT * FROM Employee Role";
+    connection.query(request, function(err, res) {
+        if (err) throw err;
+        console.table(res);
+        startingPrompts();
+    })
+};
+
+
