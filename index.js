@@ -7,13 +7,13 @@ const db = mysql.createConnection(
     {
         host: 'localhost',
         user: 'root',
-        database: '',
+        database: '',       //add database and pass later
         password: ''
     },
     console.log(`Connected to database`)
     );
 
-//Function for user prompting
+//Function for starting user prompting
 function startingPrompts() {
     inquirer.prompt ({
         type: "list",
@@ -30,7 +30,6 @@ function startingPrompts() {
             "Exit Here"
         ]
     })
-
 
 .then((answer) => {
 //Switch statement for choosing between selections
@@ -70,7 +69,7 @@ function startingPrompts() {
 })}; 
 
 
-//Function for looking all Departments
+//Function for looking at all Departments
 function viewDepartments() {
     let request = "SELECT * FROM Department";
     connection.query(request, function(err, res) {
@@ -151,7 +150,37 @@ function addEmployee() {
     }
 })
 };
+//Function for adding Employee Role Title
+function addEmployeeRole() {
+    inquirer.prompt ([
+        {
+        type: "input",
+        name: "newRoleTitle",
+        message: "Enter the Employee's Role Title:"
+        },
+        {
+        type: "input",
+        name: "newRoleSal",
+        message: "Enter the Salary amount for Role Title:"
+        },
+        {
+        type: "input",
+        name: "newDepartmentID",
+        message: "Enter the Employee's Department ID for Role:"
+        }
+    ])
+.then(function (answer) {
+    connenction.query("ENTER ROLE (title, salary, department_id) VALUES",
+    [answer.newRoleTitle, answer.newRoleSal, answer.newDepartmentID]),
+    function (err, res) {
+        if (err) throw err;
+        console.table(res);
+        startingPrompts();
+    }
+})
+};
 
+//Function for updating Employee's Role
 function updateEmployeeRole() {
    inquirer.prompt ({
    type: "input",
@@ -170,7 +199,7 @@ function updateEmployeeRole() {
     let request = "UPDATE Employee SET role_id=? WHERE id=?";
     connection.query(request, [newRoleID, empID],
     function (err, res) {
-        if(err) throw err;
+        if (err) throw err;
         console.table(res);
         startingPrompts();
     })
