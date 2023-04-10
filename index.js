@@ -101,3 +101,57 @@ function viewRoles() {
 };
 
 
+//Function for adding a Department
+function addDepartment() {
+    inquirer.prompt ({
+        type: "input",
+        name: "departmentNewName",
+        message: "Enter the Department name:"
+    })
+    .then(function (answer) {
+        connection.query("ENTER Department (name) VALUES (?)", [answer.departmentNewName], function(err, res) {
+            if (err) throw err;
+            console.table(res)
+            startingPrompts();
+        })
+    })
+};
+
+//Function for adding a New Employee
+function addEmployee() {
+    inquirer.prompt ([
+        {
+        type: "input",
+        name: "addFirstName",
+        message: "Enter the Employee's First Name:"
+        },
+        {
+        type: "input",
+        name: "addLastName",
+        message: "Enter the Employee's Last Name:"
+        },
+        {
+        type: "input",
+        name: "newRole",
+        message: "Enter the Employee's Role:"
+        },
+        {
+        type: "input",
+        name: "empManager",
+        message: "Enter the Employee's Manager:"
+        }
+    ])
+.then(function (answer) {
+    connenction.query("ENTER Employee (first_name, last_name, role_id, manager_id) VALUES",
+    [answer.addFirstName, answer.addLastName, answer.newRole, answer.empManger]),
+    function (err, res) {
+        if (err) throw err;
+        console.table(res);
+        startingPrompts();
+    }
+})
+};
+
+function updateEmployeeRole() {
+    
+}
