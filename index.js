@@ -133,12 +133,12 @@ function addEmployee() {
         {
         type: "input",
         name: "newRole",
-        message: "Enter the Employee's Role:"
+        message: "Enter the Employee's Role ID Number:"
         },
         {
         type: "input",
         name: "empManager",
-        message: "Enter the Employee's Manager:"
+        message: "Enter the Employee's Manager's ID Number:"
         }
     ])
 .then(function (answer) {
@@ -153,5 +153,27 @@ function addEmployee() {
 };
 
 function updateEmployeeRole() {
-    
-}
+   inquirer.prompt ({
+   type: "input",
+   name: "empID",
+   message: "Enter the Employee's ID you would like to update:"
+   })
+.then(function (answer) {
+    let empID = answer.empID;
+    inquirer.prompt({
+        type: "input",
+        name: "newRoleID",
+        message: "Enter the Employee's New Role ID Number:"
+    })
+.then(function (answer) {
+    let newRoleID = answer.newRoleID;
+    let request = "UPDATE Employee SET role_id=? WHERE id=?";
+    connection.query(request, [newRoleID, empID],
+    function (err, res) {
+        if(err) throw err;
+        console.table(res);
+        startingPrompts();
+    })
+})
+})
+};
