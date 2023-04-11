@@ -106,11 +106,12 @@ function viewRoles() {
 function addDepartment() {
     inquirer.prompt ({
         type: "input",
-        name: "departmentNewName",
+        name: "departmentNew",
         message: "Enter the Department name:"
     })
     .then(function (answer) {
-        connection.query("ENTER Department (name) VALUES (?)", [answer.departmentNewName], function(err, res) {
+        connection.query("ENTER Department (name) VALUES (?)", [answer.departmentNew],
+            function(err, res) {
             if (err) throw err;
             console.table(res)
             startingPrompts();
