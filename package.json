@@ -1,0 +1,19 @@
+{
+  "name": "employee_finder-chl-12",
+  "version": "1.0.0",
+  "description": "Read me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lianajayde/Employee_Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lianajayde/Employee_Finder/issues"
+  },
+  "homepage": "https://github.com/lianajayde/Employee_Finder#readme"
+}
