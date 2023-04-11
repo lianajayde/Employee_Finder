@@ -10,14 +10,10 @@ JavaScript, Inquirer@8.2.4, Node, SQL.
 <br>
 <br>
 Helpful websites used:
-<br>
-https://www.npmjs.com/package/inquirer/v/8.2.4
-
-https://www.w3schools.com
-
-https://www.hostinger.com/tutorials/what-is-mysql
-
-https://www.npmjs.com/package/console.table
+<br>https://www.npmjs.com/package/inquirer/v/8.2.4
+<br>https://www.w3schools.com
+<br>https://www.hostinger.com/tutorials/what-is-mysql
+<br>https://www.npmjs.com/package/console.table
 
 Demo:
 Private youtube demo here
