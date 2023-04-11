@@ -8,9 +8,16 @@ Employee Finder is a command line application that can be used in your local ter
 Technologies used:
 JavaScript, Inquirer@8.2.4, Node, SQL.
 <br>
+<br>
 Helpful websites used:
 <br>
-https://www.npmjs.com/package/inquirer/v/8.2.4, https://www.w3schools.com, https://www.hostinger.com/tutorials/what-is-mysql, https://www.npmjs.com/package/console.table
+https://www.npmjs.com/package/inquirer/v/8.2.4
+
+https://www.w3schools.com
+
+https://www.hostinger.com/tutorials/what-is-mysql
+
+https://www.npmjs.com/package/console.table
 
 Demo:
 Private youtube demo here
