@@ -22,7 +22,6 @@ Employee Finder is a command line application that can be used in your local ter
 -Node<br>
 -SQL<br>
 <br>
-<br>
 Helpful websites used:
 <br>https://www.npmjs.com/package/inquirer/v/8.2.4
 <br>https://www.w3schools.com
