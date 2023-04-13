@@ -17,10 +17,10 @@ Employee Finder is a command line application that can be used in your local ter
 
 
 ## Technologies used: <br>
-=JavaScript
--Inquirer@8.2.4
--Node
--SQL
+-JavaScript<br>
+-Inquirer@8.2.4<br>
+-Node<br>
+-SQL<br>
 <br>
 <br>
 Helpful websites used:
