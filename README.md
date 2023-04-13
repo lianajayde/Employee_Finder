@@ -12,7 +12,7 @@ Employee Finder is a command line application that can be used in your local ter
 -quit (bye)<br>
 -cd ..<br>
 -npm start<br>
-node index.js<br>
+-node index.js<br>
 *You should now be connected to database and be able to select from selections listed.*
 
 
