@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lianajayde/Employee_Finder/issues"
   },
-  "homepage": "https://github.com/lianajayde/Employee_Finder#readme"
+  "homepage": "https://github.com/lianajayde/Employee_Finder#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }

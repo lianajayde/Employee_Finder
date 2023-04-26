@@ -5,6 +5,7 @@ Employee Finder is a command line application that can be used in your local ter
 
 ## Installation instructions<br>
 -Open command terminal under db folder<br>
+-npm i inquirer@8.2.4<br>
 -mysql -u root -p<br>
 -source schema.sql<br>
 -source seeds.sql<br>
