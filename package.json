@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lianajayde/Employee_Finder#readme",
   "dependencies": {
+    "console.table": "^0.10.0",
     "inquirer": "^8.2.4"
   }
 }
