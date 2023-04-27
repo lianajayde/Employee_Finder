@@ -19,6 +19,7 @@ Open gitbash in terminal and then enter node index.js<br><br>
 -Node<br>
 -SQL<br>
 -Inquirer@8.2.4<br>
+-Console Table<br>
 <br>
 Helpful websites used:
 <br>https://www.npmjs.com/package/inquirer/v/8.2.4

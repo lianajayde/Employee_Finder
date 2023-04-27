@@ -31,7 +31,7 @@ function startingPrompts() {
             "Update an already exisiting Employee's Role",
             "Exit Here"
         ]
-    })
+    }) 
 
 .then((answer) => {
 //Switch statement for choosing between selections
