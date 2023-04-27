@@ -5,7 +5,8 @@ Employee Finder is a command line application that can be used in your local ter
 
 ## Installation instructions<br>
 -Open command terminal under db folder and install..<br>
-npm i inquirer@8.2.4, npm install --save mysql2, npm install console.table --save<br>
+npm i inquirer@8.2.4, npm install --save mysql2, npm install console.table --save<br><br>
+then proceed to do these commands in terminal..<br>
 mysql -u root -p<br>
 source db/schema.sql<br>
 source db/seeds.sql<br>
