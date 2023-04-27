@@ -10,7 +10,6 @@ then proceed to do these commands in the terminal..<br>
 mysql -u root -p<br>
 source db/schema.sql<br>
 source db/seeds.sql<br>
-quit (bye)<br>
 Open gitbash in terminal and then enter node index.js<br><br>
 *You should now be connected to database and be able to select from selections listed.*
 
